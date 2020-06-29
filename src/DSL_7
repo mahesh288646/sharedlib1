@@ -1,0 +1,4 @@
+@Library('utils') import static org.foo.Utilities.*
+node {
+  mvn this, 'clean package'
+}
