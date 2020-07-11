@@ -7,7 +7,7 @@ def checkOutFrom(repo) {
 //            scanCredentialsId('Git-ID')
 //            repoOwner('mahesh288646')
 //            repository(${repo})
-        }
+//        }
 }
 
 return this
