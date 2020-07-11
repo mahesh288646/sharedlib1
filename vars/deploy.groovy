@@ -1,6 +1,6 @@
 def call(def server, def port) {
 //    httpRequest httpMode: 'POST', url: "http://${server}:${port}/shutdown", validResponseCodes: '200,408'
-    sshagent(['RemoteCredentials']) {
+    sshagent(['Jenkins-RemoteCredentials']) {
         sh "scp target/*.jar wasadmin@${server}:/opt/jenkins-demo.jar"
         //sh "ssh root@${server} nohup java -Dserver.port=${port} -jar /opt/jenkins-demo.jar &"
     }
