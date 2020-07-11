@@ -1,5 +1,5 @@
 def checkOutFrom(repo) {
-  git url: "git@github.com:mahesh288646/${repo}"
+  git credentialsId: 'Git-ID' url: "git@github.com:mahesh288646/${repo}"
 }
 
 return this
